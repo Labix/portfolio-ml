@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a94d478cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="realestate.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="navbar">
+           
+                <div class="navmobile">
+                    <p>Logo</p>
+                    <button class="open-menu-btn">&#9776;</button>
+                    
+                    <!-- Mobile menu -->
+                    <div class="mobile-menu">
+                        <button class="close-menu-btn">&times;</button>
+                        <ul>
+                            <li><a href="#">Buy</a></li>
+                            <li><a href="#">Rent</a></li>
+                            <li><a href="#">Sell</a></li>
+                            <li><a href="#">Find agent</a></li>
+                            <li><a href="#">Advertise</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            <nav class="nav1">
+                <div class="dropdown">
+                    <a class="dropdown-button">Buy</a>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-button">Rent</a>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                        <a href="#">Option 4</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-button">Sell</a>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="logo">Logo</nav>
+            <nav class="nav2">
+                <a>Find agent</a>
+                <a>Advertise</a>
+                <a>Help</a>
+            </nav>
+        </div>
+        <div class="search">
+            <div class="textt">Find your desired place to live</div>
+                <div>
+                    <button class="button" onclick="showDiv(1)">Buy</button>
+                    <button class="button" onclick="showDiv(2)">Rent</button>
+                    <button class="button" onclick="showDiv(3)">Sold</button>
+                </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Wpisz wyszukiwane...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div id="div1" class="content" style="display:block;">
+                
+                <div class="napisy1">
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt velit repudiandae nam, officiis explicabo animi dicta distinctio hic est ea!</p>
+                </div>
+
+                <div>
+                    <div class="napisy2">
+                        <h1>Lorem ipsum dolor sit.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt velit repudiandae nam, officiis
+                            explicabo animi dicta distinctio hic est ea!</p>
+                    </div>
+                
+
+                <div class="social-container">
+                    
+                    <div id="box1mob" class="social-box">
+                        <h2>Warsaw, PL</h2>
+                        <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                    </div>
+                    <div id="box2mob" class="social-box">
+                        <h2>Warsaw, PL</h2>
+                        <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                    </div>
+                    <div id="box3mob" class="social-box">
+                        <h2>Warsaw, PL</h2>
+                        <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                    </div>
+                    <div id="box4mob" class="social-box">
+                        <h2>Warsaw, PL</h2>
+                        <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                    </div>
+                    <div id="box5mob" class="social-box">
+                        <h2>Warsaw, PL</h2>
+                        <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                    </div>
+                    <div id="box6mob" class="social-box">
+                        <h2>Warsaw, PL</h2>
+                        <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                    </div>
+                    <div id="box7mob" class="social-box">
+                        <h2>Warsaw, PL</h2>
+                        <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                    </div>
+                    <div id="box8mob" class="social-box">
+                        <h2>Warsaw, PL</h2>
+                        <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slider-item">
+                            <div class="cards-container">
+                                <div id="card1" class="house-card">
+                                    <img src="house2.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card2" class="house-card">
+                                    <img src="house3.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card3" class="house-card">
+                                    <img src="house4.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card4" class="house-card">
+                                    <img src="house5.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cards-container">
+                                <div id="card1" class="house-card">
+                                    <img src="house4.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card2" class="house-card">
+                                    <img src="house5.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card3" class="house-card">
+                                    <img src="house2.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card4" class="house-card">
+                                    <img src="house3.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cards-container">
+                                <div id="card1" class="house-card">
+                                    <img src="house3.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card2" class="house-card">
+                                    <img src="house4.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card3" class="house-card">
+                                    <img src="house5.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card4" class="house-card">
+                                    <img src="house2.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-prev-btn">Prev</button>
+                    <button class="slider-next-btn">Next</button>
+                </div>
+                <footer class="footmob1">
+                    <div class="conatinerx">
+                        <div class="contact-info">
+                            <h4>Kontakt</h4>
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> ul. Przykładowa 1, 00-000 Warszawa</li>
+                                <li><i class="fas fa-phone-alt"></i> +48 123 456 789</li>
+                                <li><i class="fas fa-envelope"></i> kontakt@przykladowe-nieruchomosci.pl</li>
+                            </ul>
+                        </div>
+                        <div class="social-media">
+                            <h4>Obserwuj nas</h4>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            
+            <div id="div2" class="content">
+                <div class="box">
+                    <p class="see">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="boxes">
+                        <div class="box1">
+                            <h1>Rent a house</p>
+                            <img class="vec" src="vec.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem aliquid. Corrupti unde dicta consequuntur harum doloremque accusantium, suscipit sequi.</p>
+                            <button class="buttonx">Click</button>
+                        </div>
+                        <div class="box2"><h1>Rent a house</p>
+                            <img class="vec" src="vec2.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem aliquid. Corrupti unde dicta consequuntur harum doloremque accusantium, suscipit sequi.</p>
+                            <button class="buttonx">Click</button></div>
+                        <div class="box3"><h1>Rent a house</p>
+                            <img class="vec" src="vec3.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, rem aliquid. Corrupti unde dicta consequuntur harum doloremque accusantium, suscipit sequi.</p>
+                            <button class="buttonx">Click</button></div>
+                    </div>
+                </div>
+                <footer class="footmob1">
+                    <div class="conatinerx">
+                        <div class="contact-info">
+                            <h4>Kontakt</h4>
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> ul. Przykładowa 1, 00-000 Warszawa</li>
+                                <li><i class="fas fa-phone-alt"></i> +48 123 456 789</li>
+                                <li><i class="fas fa-envelope"></i> kontakt@przykladowe-nieruchomosci.pl</li>
+                            </ul>
+                        </div>
+                        <div class="social-media">
+                            <h4>Obserwuj nas</h4>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div id="div3" class="content">
+                <div class="napisy1">
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum architecto harum quaerat earum excepturi quidem obcaecati impedit sint nesciunt perspiciatis reiciendis, sit mollitia voluptatum et?</p>
+                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slider-item">
+                            <div class="cards-container">
+                                <div id="card1" class="house-card">
+                                    <img src="house2.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card2" class="house-card">
+                                    <img src="house3.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card3" class="house-card">
+                                    <img src="house4.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                                <div id="card4" class="house-card">
+                                    <img src="house5.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1"><a href="realestate-det.html">View Homes</a> ></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cards-container">
+                                <div id="card1" class="house-card">
+                                    <img src="house4.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1">View Homes ></button>
+                                </div>
+                                <div id="card2" class="house-card">
+                                    <img src="house5.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1">View Homes ></button>
+                                </div>
+                                <div id="card3" class="house-card">
+                                    <img src="house2.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1">View Homes ></button>
+                                </div>
+                                <div id="card4" class="house-card">
+                                    <img src="house3.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1">View Homes ></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cards-container">
+                                <div id="card1" class="house-card">
+                                    <img src="house3.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1">View Homes ></button>
+                                </div>
+                                <div id="card2" class="house-card">
+                                    <img src="house4.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1">View Homes ></button>
+                                </div>
+                                <div id="card3" class="house-card">
+                                    <img src="house5.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1">View Homes ></button>
+                                </div>
+                                <div id="card4" class="house-card">
+                                    <img src="house2.jpg" alt="">
+                                    <h2>Warsaw, PL</h2>
+                                    <button class="btn1">View Homes ></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-prev-btn">Prev</button>
+                    <button class="slider-next-btn">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="containerr">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>About us</h3>
+                        <p>We are a company specializing in real estate sales and rentals. Our headquarters are located in the city center.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Contact</h3>
+                        <p>ul. Przykladowa 13</p>
+                        <p>00-001 Warsaw</p>
+                        <p>tel. +48 797-956-155</p>
+                        <p>email: info@moja-firma.pl</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Find us</h3>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="footmob">
+            <div class="conatinerx">
+                <div class="contact-info">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> ul. Przykładowa 1, 00-000 Warszawa</li>
+                        <li><i class="fas fa-phone-alt"></i> +48 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> kontakt@przykladowe-nieruchomosci.pl</li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h4>Obserwuj nas</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="realestate.js"></script>
+
+        
+
+</body>
+</html>

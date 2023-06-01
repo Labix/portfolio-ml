@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <script src="https://kit.fontawesome.com/9a94d478cd.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--Sign in page-->
+    <section>
+        <div class="login-container">
+            <div class="text-container">
+                <h1 class="text-title">Welcome back</h1>
+                <p class="text-under">Enter your username and password or if you are new user create your account by clicking sign
+                    up
+                    button</p>
+                <button onclick="showregister()" class="btnl">Sign Up</button>
+            </div>
+            <div class="forms-container">
+                <div class="signin">
+                    <form action="#" class="sign-in-form">
+                        <h1 class="title">SIGN IN</h1>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username"/>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" />
+                        </div>
+                        <button class="btn">Login</button>
+                        <button onclick="showremind()" class="remind-btn">Remind your password!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sign up page-->
+    <section>
+        <div class="register-container">
+            <div class="forms-container-register">
+                <div class="signin">
+                    <form action="#" class="sign-in-form">
+                        <h1 class="title">SIGN UP</h1>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <button class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-container-register">
+                <h1 class="text-title">Hello newbie</h1>
+                <p class="text-under">Enter all information and create your account in few seconds! If you already have an
+                    account you can login by clicking sign in button</p>
+                <button onclick="showlogin()" class="btnl">Sign In</button>
+            </div>
+        </div>
+    </section>
+
+    <!--remind password page-->
+    <section>
+        <div class="remind-container">
+            <div class="remind-window">
+                <h1 class="remind-text">Enter your username</h1>
+                <div class="remind">
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" />
+                    </div>
+                </div>
+                <button class="btn">Submit</button>
+                <button onclick="back()" class="remind-btn2">Back and sign in</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="log.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, html {
+overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.login-container{
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    max-height: 100vh;
+    display: flex;
+    z-index: 1; 
+}
+
+.text-container{
+
+    background-color: #126BBF;
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.text-under{
+    color: #fff;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.btnl{
+    margin-top:20px;
+    width: 150px;
+    height:40px;
+    color: #126BBF;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 60px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+
+.forms-container{
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    flex-direction: column;
+}
+
+.title{
+    color: #126BBF;
+}
+
+.signin{
+    width:450px;
+}
+
+.input-field{
+    background-color: #f0f0f0;
+    padding: 0 0.4rem;
+    border-radius: 55px;
+    margin-top: 10px;
+}
+
+.input-field i{
+    margin-left: 20px;
+    text-align:center;
+    line-height: 55px;
+    color: #acacac;
+    font-size: 1.2rem;
+}
+
+.input-field input{
+    margin-left: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-field input:focus::placeholder{
+    color:transparent;
+}
+
+.register-container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 100vw;
+    transition: all 0.5s ease-out;
+    display: flex;
+    z-index:2;
+}
+
+.forms-container-register{
+    width: 45%;
+    height: 100vh;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container-register{
+    width: 55%;
+    height: 100vh;
+    background-color: #126BBF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.btn{
+    margin-top:20px;
+    width: 150px;
+    height:40px;
+    color: #fff;
+    font-size:1rem;
+    text-transform: uppercase;
+    border:none;
+    border-radius: 60px;
+    background-color: #126BBF;
+    cursor: pointer;
+}
+
+.remind-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.remind-window{
+    background-color: rgba(255,255,255,1);
+    width: 600px;
+    height: 300px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    flex-direction: column;
+}
+
+.remind-btn{
+    margin-top: 30px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #126BBF;
+}
+
+.remind-btn2{
+    margin-top: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #126BBF;
+}
+
+.remind{
+    width:550px;
+}
+
+.remind-text{
+    color: #126BBF;
+}
+
+@media screen and (max-width:570px) {
+    
+  .login-container{
+    flex-direction:column;
+    width: 100%;
+    position:static;
+  }
+
+  .text-container{
+    width: 100%;
+    display: flex;
+  }
+
+  .forms-container{
+    width: 100%;
+    display:flex;
+  }
+
+  .text-title{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .text-under{
+    
+  }
+
+  .register-container{
+    display:none;
+  }
+
+  .input-field{
+    margin-top: 30px;
+    display: flex;
+}
+
+.title{
+    margin-bottom: -10px;
+    margin-top: 30px;
+}
+
+.input-field input:focus{
+    
+}
+
+  .input-field i{
+    
+}
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a94d478cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="games.css">
+    <title>Games</title>
+</head>
+<body>
+    <header>
+
+        <div class="navmobile">
+            <p class="moblog">Logo</p>
+            <button class="open-menu-btn">&#9776;</button>
+        
+            <!-- Mobile menu -->
+            <div class="mobile-menu">
+                <button class="close-menu-btn">&times;</button>
+                <ul>
+                    <li><a href="games.html">Strona główna</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nagłówek strony -->
+        <nav class="nav">
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+            <div class="restnav">
+                <a href="games.html"><span>Strona główna</span></a>
+                <a href="library.html"><span>Library</span></a>
+                <a href="shop.html"><span>Shop</span></a>
+                <a href="community.html"><span>Community</span></a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="mob-main">
+            <p>FEATURED & RECOMMENDED</p>
+            <div class="social-container">
+                
+                <div id="box1mob" class="social-box">
+                    <button class="btn1">Purchase now</button>
+                </div>
+                <div id="box2mob" class="social-box">
+                    <button class="btn1">Purchase now</button>
+                </div>
+                <div id="box3mob" class="social-box">
+                    <button class="btn1">Purchase now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mob-main2">
+            <p>SPECIAL OFFERS</p>
+            <div class="social-container">
+            
+                <div id="box1mob" class="social-box">
+                    <div class="down">
+                        <h3>Oferta weekendowa</h2>
+                            <p>Oferta kończy się 29 maja o 19:00</p>
+                            <div class="cena">
+                                <div class="cena-proc">-50%</div>
+                                <div class="cena-liczb">100zł</div>
+                            </div>
+                    
+                    </div>
+                </div>
+                <div id="box2mob" class="social-box">
+                    <div class="down">
+                        <h3>Oferta weekendowa</h2>
+                            <p>Oferta kończy się 29 maja o 19:00</p>
+                            <div class="cena">
+                                <div class="cena-proc">-50%</div>
+                                <div class="cena-liczb">100zł</div>
+                            </div>
+                    
+                    </div>
+                </div>
+                <div id="box3mob" class="social-box">
+                    <div class="down">
+                        <h3>Oferta weekendowa</h2>
+                            <p>Oferta kończy się 29 maja o 19:00</p>
+                            <div class="cena">
+                                <div class="cena-proc">-50%</div>
+                                <div class="cena-liczb">100zł</div>
+                            </div>
+                    
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="strona-glowna">
+            <div class="banner-cont" id="div1">
+                <button class="slider-prev-btn" onclick="showDiv(3)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="slider-next-btn" onclick="showDiv(2)">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="banner" id="banner1">
+                    
+                </div>
+                <div class="banner-text">
+                    <h1>The Witcher 3</h1>
+                    <div class="banner-text2">
+                        <div class="divcont">
+                            <div class="divx" id="pic1"></div>
+                            <div class="divx" id="pic3"></div>
+                        </div>
+                        
+                        <div class="divcont">
+                            <div class="divx" id="pic2"></div>
+                            <div class="divx" id="pic4"></div>
+                        </div>
+                    </div>
+                    <div class="test">
+                        <button class="btnx">Purchase now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-cont" id="div2">
+                <button class="slider-prev-btn" onclick="showDiv(1)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="slider-next-btn" onclick="showDiv(3)">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="banner" id="banner2">
+            
+                </div>
+                <div class="banner-text">
+                    <h1>Assassin's Creed IV Black Flag</h1>
+                    <div class="banner-text2">
+                        <div class="divcont">
+                            <div class="divx2" id="pic5"></div>
+                            <div class="divx2" id="pic6"></div>
+                        </div>
+            
+                        <div class="divcont">
+                            <div class="divx2" id="pic7"></div>
+                            <div class="divx2" id="pic8"></div>
+                        </div>
+                    </div>
+                    <div class="test">
+                        <button class="btnx" onclick="showDiv(3)">Purchase now!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-cont" id="div3">
+                <button class="slider-prev-btn" onclick="showDiv(2)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="slider-next-btn" onclick="showDiv(1)">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="banner" id="banner3">
+            
+                </div>
+                <div class="banner-text">
+                    <h1>Far Cry 3</h1>
+                    <div class="banner-text2">
+                        <div class="divcont">
+                            <div class="divx3" id="pic9"></div>
+                            <div class="divx3" id="pic10"></div>
+                        </div>
+            
+                        <div class="divcont">
+                            <div class="divx3" id="pic11"></div>
+                            <div class="divx3" id="pic12"></div>
+                        </div>
+                    </div>
+                    <div class="test">
+                        <button class="btnx" onclick="showDiv(1)">Purchase now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="strona-glowna2">
+            <div class="banner-cont2" id="ddiv1">
+                <button class="slider-prev-btn" onclick="showDiv2(2)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="slider-next-btn" onclick="showDiv2(2)">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="game" id="game1">
+                    <div class="down">
+                        <h3>Oferta weekendowa</h2>
+                        <p>Oferta kończy się 29 maja o 19:00</p>
+                        <div class="cena">
+                            <div class="cena-proc">-50%</div>
+                            <div class="cena-liczb">100zł</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="game" id="game2">
+                    <div class="down">
+                        <h3>Oferta weekendowa</h2>
+                            <p>Oferta kończy się 29 maja o 19:00</p>
+                            <div class="cena">
+                                <div class="cena-proc">-50%</div>
+                                <div class="cena-liczb">100zł</div>
+                            </div>
+                    
+                    </div>
+                </div>
+                <div class="game" id="game3">
+                    <div class="down">
+                        <h3>Oferta weekendowa</h2>
+                            <p>Oferta kończy się 29 maja o 19:00</p>
+                            <div class="cena">
+                                <div class="cena-proc">-50%</div>
+                                <div class="cena-liczb">100zł</div>
+                            </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="banner-cont2" id="ddiv2">
+                <button class="slider-prev-btn" onclick="showDiv2(1)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="slider-next-btn" onclick="showDiv2(1)">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="game" id="game3">
+                    <div class="down">
+                        <h3>Oferta weekendowa</h2>
+                            <p>Oferta kończy się 29 maja o 19:00</p>
+                            <div class="cena">
+                                <div class="cena-proc">-50%</div>
+                                <div class="cena-liczb">100zł</div>
+                            </div>
+            
+                    </div>
+                </div>
+                <div class="game" id="game1">
+                    <div class="down">
+                        <h3>Oferta weekendowa</h2>
+                            <p>Oferta kończy się 29 maja o 19:00</p>
+                            <div class="cena">
+                                <div class="cena-proc">-50%</div>
+                                <div class="cena-liczb">100zł</div>
+                            </div>
+            
+                    </div>
+                </div>
+                <div class="game" id="game2">
+                    <div class="down">
+                        <h3>Oferta weekendowa</h2>
+                            <p>Oferta kończy się 29 maja o 19:00</p>
+                            <div class="cena">
+                                <div class="cena-proc">-50%</div>
+                                <div class="cena-liczb">100zł</div>
+                            </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="ranking-section">
+            <h2 class="section-title">Ranking popularnych gier</h2>
+            <div class="game-rankings">
+                <div class="game-ranking">
+                    <img src="img/fc3.jpg" alt="Game 1" class="game-image">
+                    <div class="game-details">
+                        <h3 class="game-title">Game 1</h3>
+                        <p class="game-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="game-rating">
+                            <span class="rating-icon">&#9733;</span>
+                            <span class="rating-value">4.5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-ranking">
+                    <img src="img/ac4.jpg" alt="Game 2" class="game-image">
+                    <div class="game-details">
+                        <h3 class="game-title">Game 2</h3>
+                        <p class="game-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="game-rating">
+                            <span class="rating-icon">&#9733;</span>
+                            <span class="rating-value">4.2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-ranking">
+                    <img src="img/fc3.jpg" alt="Game 3" class="game-image">
+                    <div class="game-details">
+                        <h3 class="game-title">Game 3</h3>
+                        <p class="game-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="game-rating">
+                            <span class="rating-icon">&#9733;</span>
+                            <span class="rating-value">4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dodaj więcej rankingów gier -->
+            </div>
+        </section>
+
+        <section class="latest-section dark-bg">
+            <h2 class="section-title">Ostatnie recenzje i artykuły</h2>
+            <div class="latest-content">
+                <div class="latest-article">
+                    <img src="img/ac4.jpg" alt="Article 1" class="article-image">
+                    <div class="article-details">
+                        <h3 class="article-title">Game review</h3>
+                        <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                <div class="latest-article">
+                    <img src="img/fc3.jpg" alt="Article 2" class="article-image">
+                    <div class="article-details">
+                        <h3 class="article-title">Game review</h3>
+                        <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                <div class="latest-article">
+                    <img src="img/ac4.jpg" alt="Article 3" class="article-image">
+                    <div class="article-details">
+                        <h3 class="article-title">Game review</h3>
+                        <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                <!-- Dodaj więcej artykułów -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Regulamin</a>
+            <a href="#">Polityka prywatności</a>
+            <a href="#">O nas</a>
+        </div>
+    
+        <div class="footer-contact">
+            <p>Adres: 123 Street, City, Country</p>
+            <p>Email: contact@example.com</p>
+            <p>Telefon: 123-456-789</p>
+        </div>
+    
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="games.js"></script>
+</body>
+</html>

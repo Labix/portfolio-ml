@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+    background-color:#1A1A1A;
+}
+
+  .navmobile{
+  display:none;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#F2F2F2;
+}
+
+.nav a:last-child{
+    margin-right:5vw;
+}
+
+.nav{
+    display:flex;
+    height:8vh;
+    align-items:center;
+    background-color:#141414;
+    position:fixed;
+    width:100%;
+}
+
+.logo{
+    width:50%;
+    margin-left:2vw;
+}
+
+.restnav{
+    width:50%;
+    display:flex;
+    justify-content:flex-end;
+    //gap: 3vw;
+}
+
+.restnav a {
+  position: relative;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.restnav a span {
+  position: relative;
+  padding: 10px;
+}
+
+.restnav a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0089a7;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius:10px;
+}
+
+.restnav a:hover::before {
+  transform: scaleX(1);
+}
+
+
+.community-section {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top:10vh;
+}
+
+.user-profile {
+  margin-bottom: 40px;
+}
+
+.profile-content {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.profile-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.edit-profile-button,
+.privacy-settings-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #4caf50;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.friends-section {
+  margin-bottom: 40px;
+}
+
+.friend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friend-item {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+
+.invite-friends {
+  margin-top: 20px;
+}
+
+.invite-friends input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.invite-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.forum-section {
+  margin-bottom: 40px;
+}
+
+.forum-categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.group-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.group-item {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Zawartość profilu użytkownika */
+.profile-content {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+#prof1{
+    width:40%;
+}
+
+.prof-cont{
+    display:flex;
+    justify-content:center;
+}
+
+#prof2{
+    margin-top:5ch;
+}
+
+.profile-content h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profile-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-content p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.profile-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.profile-content ul li {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Elementy profilu użytkownika */
+.profile-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.profile-section {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.profile-section h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-section p {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Stylizacja sekcji lista znajomych */
+.friends-section {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width:30%;
+}
+
+.friends-section h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.friend-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.friend-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.friend-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.friend-list p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+
+.friend-actions {
+  margin-top: 20px;
+}
+
+.friend-actions input[type="text"] {
+  width: 200px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+}
+
+.friend-actions button {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #333333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Stylizacja sekcji chatu */
+.chat-section {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width:30%;
+  height:50%;
+}
+
+#mes2 p{
+    color:white;
+}
+
+.chat-section h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.chat-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.message .avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.message .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.message-content {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.message-info {
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.message-text {
+  color: #333333;
+  font-size: 14px;
+  margin: 0;
+}
+
+.message.sent {
+  align-items: center;
+  text-align: right;
+  background-color: #00aaff;
+  color: #fff;
+  width:20vw;
+  border-radius:5px;
+}
+
+.message.sent .avatar {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.message.sent .message-content {
+  background-color: #00aaff;
+}
+
+.message-form {
+  display: flex;
+  align-items: center;
+}
+
+.message-form input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+}
+
+.message-form button {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #333333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contt{
+    display:flex;
+    justify-content:center;
+    gap:10vw;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-contact {
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.social-icon i {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+
+    .contt{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .chat-section{
+        display:none;
+    }
+
+    .friends-section{
+        width:60%;
+    }
+
+    .friend-actions button{
+        margin-top:2vh;
+    }
+
+     .navmobile{
+    display:flex;
+    justify-content: space-between;
+    width:100vw;
+    position:fixed;
+    top:0;
+    z-index:99999;
+    background-color:#1A1A1A
+  }
+
+  .navmobile p{
+    font-size: 24px;
+    margin-left:20px;
+  }
+
+  .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 9999;
+  transition: right 0.3s ease-in-out;
+}
+
+.open-menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+  outline: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.open-menu-btn:hover {
+  color: #777;
+}
+
+/* Style the close button */
+.close-menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color:#fff;
+}
+
+/* Show the mobile menu when the open button is clicked */
+.mobile-menu-open .mobile-menu {
+  display: block;
+}
+
+/* Hide the open button when the mobile menu is open */
+.mobile-menu-open .open-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  background-color:#1A1A1A;
+  
+}
+
+.mobile-menu.active {
+  display: block;
+  
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #2f3138
+}
+
+.mobile-menu li:hover {
+  background-color: #ddd;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.moblog{
+  color:#fff;
+}
+
+.nav{
+    display:none;
+}
+}

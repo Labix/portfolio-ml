@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#1A1A1A;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.navmobile{
+  display:none;
+}
+
+.mob-main{
+  display:none;
+}
+
+.mob-main2{
+  display:none;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#F2F2F2;
+}
+
+.nav a:last-child{
+    margin-right:5vw;
+}
+
+.nav{
+    display:flex;
+    height:8vh;
+    align-items:center;
+    background-color:#141414;
+    position:fixed;
+    width:100%;
+    z-index:999;
+}
+
+.logo{
+    width:50%;
+    margin-left:2vw;
+}
+
+.restnav{
+    width:50%;
+    display:flex;
+    justify-content:flex-end;
+    //gap: 3vw;
+}
+
+.restnav a {
+  position: relative;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.restnav a span {
+  position: relative;
+  padding: 10px;
+}
+
+.restnav a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0089a7;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius:10px;
+}
+
+.restnav a:hover::before {
+  transform: scaleX(1);
+}
+
+.strona-glowna{
+  width:100%;
+  height:80vh;
+  display:flex;
+  justify-content:center;
+}
+
+.strona-glowna p{
+  margin-top:10vh;
+}
+
+.banner-cont{
+  margin-top:10vh;
+  width:70%;
+  height:360px;
+  background-color:#141414;
+  color: #F2F2F2;
+  display:flex;
+}
+
+.banner{
+  width:70%;
+  background-image: url('img/witcher3.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+  transition: background-image 0.2s ease;
+
+}
+
+
+
+.divx:hover ~ .banner {
+  transition: background-image 0.2s ease;
+}
+
+
+.banner-text{
+  width:30%;
+  text-align:left;
+}
+.banner-text h1{
+  margin-left:10px;
+}
+.banner-text2{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+
+}
+
+.divx{
+  width:120px;
+  height:70px;
+}
+
+.divx:first-child{
+  margin-bottom:20px;
+}
+
+.divx:hover{
+  cursor: pointer;
+}
+
+#pic1{
+  background-image: url('img/witcher3-1.png'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#pic2{
+  background-image: url('img/witcher3-2.jpeg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#pic3{
+  background-image: url('img/witcher3-3.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#pic4{
+  background-image: url('img/witcher3-4.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+.banner-text .btnx{
+  width:50%;
+  height:40%;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  border-radius:5px;
+  color: #fff;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.banner-text .btnx:hover{
+  background-color:#141414;
+}
+
+.test{
+  height:30%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#banner2{
+  background-image: url('img/ac4.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#div2{
+  display:none;
+}
+
+.divx2{
+  width:120px;
+  height:70px;
+}
+
+.divx2:first-child{
+  margin-bottom:20px;
+}
+
+.divx2:hover{
+  cursor: pointer;
+}
+
+.divx2:hover ~ .banner {
+  transition: none;
+}
+
+#pic5{
+  background-image: url('img/ac4-1.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#pic6{
+  background-image: url('img/ac4-2.jpeg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#pic7{
+  background-image: url('img/ac4-3.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#pic8{
+  background-image: url('img/ac4-4.jpeg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#banner2{
+  background-image: url('img/ac4.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#banner3{
+  background-image: url('img/fc3.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#div3{
+  display:none;
+}
+
+.divx3{
+  width:120px;
+  height:70px;
+}
+
+.divx3:first-child{
+  margin-bottom:20px;
+}
+
+.divx3:hover{
+  cursor: pointer;
+}
+
+.divx3:hover ~ .banner {
+  transition: none;
+}
+
+#pic9{
+  background-image: url('img/fc3-3.png'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#pic10{
+  background-image: url('img/fc3-4.webp'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#pic11{
+  background-image: url('img/fc3-1.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#pic12{
+  background-image: url('img/fc3-2.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+section{
+  position:relative;
+}
+
+.slider-prev-btn{
+  left:12%;
+  top:40%;
+}
+.slider-next-btn{
+  right:12%;
+  top:40%;
+}
+
+.slider-prev-btn,
+.slider-next-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #141414;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.slider-prev-btn:hover,
+.slider-next-btn:hover {
+  background-color: #ccc;
+}
+
+.strona-glowna2{
+  width:100%;
+  height:80vh;
+  display:flex;
+  justify-content:center;
+  background-color:#222222;
+}
+
+.banner-cont2{
+  margin-top:10vh;
+  width:70%;
+  height:360px;
+  background-color:#141414;
+  color: #F2F2F2;
+  display:flex;
+  gap:1%;
+}
+
+.game{
+  height:100%;
+  width:33%;
+  background-color:red;
+  position:relative;
+}
+
+#game1{
+  background-image: url('img/witcher3.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#game2{
+  background-image: url('img/fc3.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#game3{
+  background-image: url('img/ac4.jpg'); /* ścieżka do obrazka */
+  background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+  background-position: center; /* ustawienie pozycji obrazka */
+  background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+.game:hover{
+  cursor:pointer;
+}
+
+.down{
+  height:25%;
+  width:100%;
+  background-color:#21759A;
+  position:absolute;
+  bottom:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.down p{
+  font-size:12px;
+  margin-top:0px;
+  margin-left:6%;
+}
+
+.down h3{
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left:6%;
+}
+
+.down .cena-proc{
+  width:20%;
+  height:70%;
+  background-color:#4C6B22;
+  margin-left:6%;
+  margin-bottom:2%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.cena{
+  height:100%;
+  display:flex;
+}
+
+.down .cena-liczb{
+  width:20%;
+  height:70%;
+  background-color:#344654;
+  color:#a8e929;
+  margin-bottom:2%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#ddiv2{
+  display:none;
+}
+
+.ranking-section {
+  background-color: #1A1A1A;
+  padding: 20px;
+  color:white;
+}
+
+.dark-bg {
+  color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-rankings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-ranking {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #333333;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.game-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.game-details {
+  text-align: center;
+}
+
+.game-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color:white;
+}
+
+.game-description {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.game-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-icon {
+  color: #f5c518;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.rating-value {
+  font-size: 16px;
+  font-weight: bold;
+  color:white;
+}
+
+.latest-section {
+  background-color: #222222;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.dark-bg {
+  color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.latest-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.latest-article {
+  background-color: #333333;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.article-details {
+  padding: 10px;
+}
+
+.article-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.article-description {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #222222;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #dddddd;
+}
+
+.review-cont{
+  display:flex;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-contact {
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.social-icon i {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+
+  body{
+    width:100%;
+  }
+
+  .navmobile{
+  display:block;
+}
+
+.mob-main{
+  display:block;
+}
+
+.mob-main2{
+  display:block;
+}
+
+  .nav{
+    display:none;
+  }
+
+  .strona-glowna{
+    display:none;
+  }
+
+  .strona-glowna2{
+    display:none;
+  }
+
+   .navmobile{
+    display:flex;
+    justify-content: space-between;
+    width:100vw;
+    position:fixed;
+    top:0;
+    z-index:99999;
+    background-color:#1A1A1A
+  }
+
+  .navmobile p{
+    font-size: 24px;
+    margin-left:20px;
+  }
+
+  .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 9999;
+  transition: right 0.3s ease-in-out;
+}
+
+.open-menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+  outline: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.open-menu-btn:hover {
+  color: #777;
+}
+
+/* Style the close button */
+.close-menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color:#fff;
+}
+
+/* Show the mobile menu when the open button is clicked */
+.mobile-menu-open .mobile-menu {
+  display: block;
+}
+
+/* Hide the open button when the mobile menu is open */
+.mobile-menu-open .open-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  background-color:#1A1A1A;
+  
+}
+
+.mobile-menu.active {
+  display: block;
+  
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #2f3138
+}
+
+.mobile-menu li:hover {
+  background-color: #ddd;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.moblog{
+  color:#fff;
+}
+
+.social-container{
+        grid-template-columns: unset;
+        grid-auto-flow: column;
+        grid-auto-columns: 60%;
+        overflow-x: auto;
+        /* grid-template-rows: repeat(2, 1fr); */
+        /* Make smoothly scroll and touch */
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always;
+    }
+
+    .social-box{
+        scroll-snap-align: center;
+    }
+
+    /* Remove scrollbar */
+    .social-container{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .social-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    #box1mob{
+          background-image: url('img/witcher3.jpg'); /* ścieżka do obrazka */
+          background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+          background-position: center; /* ustawienie pozycji obrazka */
+          background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+    }
+    #box2mob{
+          background-image: url('img/fc3.jpg'); /* ścieżka do obrazka */
+          background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+          background-position: center; /* ustawienie pozycji obrazka */
+          background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+    }
+    #box3mob{
+          background-image: url('img/ac4.jpg'); /* ścieżka do obrazka */
+          background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+          background-position: center; /* ustawienie pozycji obrazka */
+          background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+    }
+
+    .social-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 15px;
+    grid-gap: 20px;
+}
+
+.social-box{
+    background: var(--clr);
+    color: #fff;
+    border-radius: 10px;
+    height: 200px;
+    position:relative;
+}
+
+.social-box h2{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  color: white;
+}
+
+.social-box button{
+  position: absolute;
+  bottom:20px;
+  right: 10px;
+  //padding:20px;
+  border-radius: 10px;
+  font-size:16px;
+  background-color: rgba(0,123,255, 0.9);
+  border: 1px solid rgba(0,123,255, 0.9);
+  color: #fff;
+  border:none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s; /* czas trwania animacji */
+  cursor: pointer;
+}
+
+.mob-main p{
+  margin-top:10vh;
+  color:#fff;
+  margin-left:4vw;
+}
+
+.mob-main2 p{
+  color:#fff;
+  margin-left:4vw;
+}
+
+.down{
+  height:35%;
+}
+
+.down h3{
+  font-size:15px;
+}
+
+}

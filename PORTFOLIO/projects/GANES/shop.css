@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+    background-color:#1A1A1A;
+}
+
+  .navmobile{
+  display:none;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#F2F2F2;
+}
+
+.nav a:last-child{
+    margin-right:5vw;
+}
+
+.nav{
+    display:flex;
+    height:8vh;
+    align-items:center;
+    background-color:#141414;
+    position:fixed;
+    width:100%;
+}
+
+.logo{
+    width:50%;
+    margin-left:2vw;
+}
+
+.restnav{
+    width:50%;
+    display:flex;
+    justify-content:flex-end;
+    //gap: 3vw;
+}
+
+.restnav a {
+  position: relative;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.restnav a span {
+  position: relative;
+  padding: 10px;
+}
+
+.restnav a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0089a7;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius:10px;
+}
+
+.restnav a:hover::before {
+  transform: scaleX(1);
+}
+
+.store-section {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top:10vh;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width: 250px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-details {
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-contact {
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.social-icon i {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+
+  .nav{
+    display:none;
+  }
+
+      .navmobile{
+    display:flex;
+    justify-content: space-between;
+    width:100vw;
+    position:fixed;
+    top:0;
+    z-index:99999;
+    background-color:#1A1A1A
+  }
+
+  .navmobile p{
+    font-size: 24px;
+    margin-left:20px;
+  }
+
+  .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 9999;
+  transition: right 0.3s ease-in-out;
+}
+
+.open-menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+  outline: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.open-menu-btn:hover {
+  color: #777;
+}
+
+/* Style the close button */
+.close-menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color:#fff;
+}
+
+/* Show the mobile menu when the open button is clicked */
+.mobile-menu-open .mobile-menu {
+  display: block;
+}
+
+/* Hide the open button when the mobile menu is open */
+.mobile-menu-open .open-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  background-color:#1A1A1A;
+  
+}
+
+.mobile-menu.active {
+  display: block;
+  
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #2f3138
+}
+
+.mobile-menu li:hover {
+  background-color: #ddd;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.moblog{
+  color:#fff;
+}
+
+}

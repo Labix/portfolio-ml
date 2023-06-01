@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="realestate-det.css">
+    <script src="https://kit.fontawesome.com/9a94d478cd.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navmobile">
+        <p>Logo</p>
+        <button class="open-menu-btn">&#9776;</button>
+    
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <button class="close-menu-btn">&times;</button>
+            <ul>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Find agent</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="realestate.html" class="logo">LOGO</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Wpisz wyszukiwane...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="dropdown">
+            <a class="dropdown-button">Buy</a>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="dropdown-button">Rent</a>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+                <a href="#">Option 4</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="dropdown-button">Sell</a>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+        <a href="#">Find agent</a>
+        <a href="#">Advertise</a>
+        <a href="#">Help</a>
+    </nav>
+    <div class="container">
+        <div class="photo-container">
+            <div class="photo" onclick="openPopup()"></div>
+        </div>
+        <div class="house-details">
+            <div class="det">
+                <div class="detail">
+                    <p class="p1">Warszawa, Polska<br><p>Mazowieckie, PL 00-001 Warszawa</p></p>
+                </div>
+                <div class="detail">
+                    <p class="p2">$500,000</p>
+                </div>
+            </div>
+            <div class="mobile-det">
+                <div class="detail">
+                    <p class="p1">Warszawa, Polska<br>
+                    <p>Mazowieckie, PL 00-001 Warszawa</p>
+                    </p>
+                </div>
+                <div class="detail">
+                    <p class="p2">$500,000</p>
+                </div>
+            </div>
+            <div class="detail detail-mob-icon" id="detail2">
+                <ul>
+                    <li>
+                        <i class="fas fa-bed"></i> 3 beds
+                    </li>
+                    <li>
+                        <i class="fas fa-bath"></i> 2 baths
+                    </li>
+                    <li>
+                        <i class="fas fa-car"></i> 2 cars
+                    </li>
+                </ul>
+            </div>
+            <div class="detail detail-nomob-icon" id="detail2">
+                <ul>
+                    <li>
+                        <i class="fas fa-bed"></i> Sypialnie: 3
+                    </li>
+                    <li>
+                        <i class="fas fa-bath"></i> Łazienki: 2
+                    </li>
+                    <li>
+                        <i class="fas fa-car"></i> Miejsca parkingowe: 2
+                    </li>
+                </ul>
+            </div>
+            <div class="tour-btn-cont">
+                <p>Request a tour as early as <br>Today at 12:30PM</p>
+                <button onclick="openPopup2()">Schedule a Tour</button>
+            </div>
+        </div>
+        <div class="desc">
+            <h1>Description</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, tempore quasi! Necessitatibus, facilis delectus. Asperiores excepturi magnam explicabo nesciunt consectetur eaque. Amet repellat quibusdam, autem, a totam debitis velit cupiditate temporibus consectetur necessitatibus aliquid reprehenderit ipsam ullam adipisci voluptate fugit, inventore pariatur atque ratione sequi maxime culpa magnam. Voluptatem enim quisquam numquam totam, fuga velit corporis perferendis accusamus dignissimos sapiente! Veniam delectus, illum, aspernatur alias quia perferendis sed reiciendis reprehenderit voluptate rerum eius quas quam libero beatae. Tempore veniam sed autem? Optio similique suscipit excepturi autem eaque? Facilis nisi praesentium nemo excepturi neque voluptatem facere quis ratione aliquid voluptate. Accusantium!</p>
+        </div>
+        <div class="containerinfo">
+            <div class="info-cont">
+                <div class="text"><p>Detail informations</p></div>
+                <div class="info-cont-more">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <div class="iconte">
+                                <i class="fas fa-bed"></i> Sypialnie:
+                            </div>
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <div class="iconte">
+                                <i class="fas fa-bath"></i> Łazienki:
+                            </div>
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <div class="iconte">
+                                <i class="fa-solid fa-square-parking"></i> Parking:
+                            </div>
+                            <p>Garage</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="info2" class="info">
+                    <ul>
+                        <li>
+                            <div class="iconte">
+                                <i class="fas fa-bed"></i> Sypialnie:
+                            </div>
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <div class="iconte">
+                                <i class="fas fa-bath"></i> Łazienki:
+                            </div>
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <div class="iconte">
+                                <i class="fa-solid fa-square-parking"></i> Parking:
+                            </div>
+                            <p>Garage</p>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="overlayx">
+            <div class="popup2">
+                
+                <div class="top">
+                    <p>Schedule a tour</p>
+                    <i onclick="closePopup2()" class="fa-solid fa-x"></i>
+                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slider-item">
+                            <div class="cards-container">
+                                <div id="card1" class="house-card active">
+                                    <p id="currentDayshort"></p>
+                                    <p id="currentDaynumber"></p>
+                                    <p id="currentDay"></p>
+                                </div>
+                                <div id="card2" class="house-card">
+                                    <p id="currentDayshort2"></p>
+                                    <p id="currentDaynumber2"></p>
+                                    <p id="currentDay2"></p>
+                                </div>
+                                <div id="card3" class="house-card">
+                                    <p id="currentDayshort3"></p>
+                                    <p id="currentDaynumber3"></p>
+                                    <p id="currentDay3"></p>
+                                </div>
+                                <div id="card4" class="house-card">
+                                    <p id="currentDayshort4"></p>
+                                    <p id="currentDaynumber4"></p>
+                                    <p id="currentDay4"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cards-container">
+                                <div id="card1" class="house-card">
+                                    <p id="currentDayshort5"></p>
+                                    <p id="currentDaynumber5"></p>
+                                    <p id="currentDay5"></p>
+                                </div>
+                                <div id="card2" class="house-card">
+                                    <p id="currentDayshort6"></p>
+                                    <p id="currentDaynumber6"></p>
+                                    <p id="currentDay6"></p>
+                                </div>
+                                <div id="card3" class="house-card">
+                                    <p id="currentDayshort7"></p>
+                                    <p id="currentDaynumber7"></p>
+                                    <p id="currentDay7"></p>
+                                </div>
+                                <div id="card4" class="house-card">
+                                    <p id="currentDayshort8"></p>
+                                    <p id="currentDaynumber8"></p>
+                                    <p id="currentDay8"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-prev-btn">Prev</button>
+                    <button class="slider-next-btn">Next</button>
+                </div>
+                <div class="pop2cont">
+                <label for="cars">Time</label>
+                <select name="cars" id="cars">
+                    <option value="6AM">6:00 AM</option>
+                    <option value="7AM">7:00 AM</option>
+                    <option value="8AM">8:00 AM</option>
+                    <option value="9AM">9:00 AM</option>
+                    <option value="10AM">10:00 AM</option>
+                    <option value="11AM">11:00 AM</option>
+                    <option value="12AM">12:00 AM</option>
+                    <option value="1PM">1:00 PM</option>
+                    <option value="2PM">2:00 PM</option>
+                </select>
+                <div class="form">
+                    <input type="text" placeholder="Phone number">
+                    <input type="email" placeholder="Email">
+                    <button>Schedule a tour</button>
+                </div>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="overlay" id="overlay">
+            <div class="popup">
+                <div class="hide"></div>
+                <div class="box1">
+                    <div class="up">
+                    <div class="upbar">
+                        <p>Listing photos (12)</p>
+                        <i onclick="closePopup()" class="fa-solid fa-x"></i>
+                    </div>
+                    </div>
+                    <div class="images-cont">
+                        <div id="div1" onclick="showHiddenDiv()"></div>
+                        
+                            <div class="XD" id="XD1">
+                                <img src="house2.jpg" alt="">
+                                <span class="close" id="close1">&times;</span>
+                            </div>
+                        
+                        <div id="div2" onclick="showHiddenDiv2()"></div>
+                        <div class="XD" id="XD2">
+                            <img src="house3.jpg" alt="">
+                            <span class="close" id="close2">&times;</span>
+                        </div>
+                        
+                        <div id="div2" onclick="showHiddenDiv2()"></div>
+                        <div class="XD" id="XD2">
+                            <img src="house3.jpg" alt="">
+                            <span class="close" id="close2">&times;</span>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="images-cont">
+                        <div id="div3" onclick="showHiddenDiv3()"></div>
+                        <div class="XD" id="XD3">
+                            <img src="house4.jpg" alt="">
+                            <span class="close" id="close3">&times;</span>
+                        </div>
+                        <div id="div4" onclick="showHiddenDiv4()"></div>
+                        <div class="XD" id="XD4">
+                            <img src="house5.jpg" alt="">
+                            <span class="close" id="close4">&times;</span>
+                        </div>
+                        <div id="div2" onclick="showHiddenDiv2()"></div>
+                        <div class="XD" id="XD2">
+                            <img src="house3.jpg" alt="">
+                            <span class="close" id="close2">&times;</span>
+                        </div>
+                    </div>
+                    <div class="images-cont">
+                        <div id="div1" onclick="showHiddenDiv()"></div>
+                    
+                        <div class="XD" id="XD1">
+                            <img src="house2.jpg" alt="">
+                            <span class="close" id="close1">&times;</span>
+                        </div>
+                    
+                        <div id="div2" onclick="showHiddenDiv2()"></div>
+                        <div class="XD" id="XD2">
+                            <img src="house3.jpg" alt="">
+                            <span class="close" id="close2">&times;</span>
+                        </div>
+                        <div id="div2" onclick="showHiddenDiv2()"></div>
+                        <div class="XD" id="XD2">
+                            <img src="house3.jpg" alt="">
+                            <span class="close" id="close2">&times;</span>
+                        </div>
+                    
+                    </div>
+                    <div class="images-cont">
+                        <div id="div1" onclick="showHiddenDiv()"></div>
+                    
+                        <div class="XD" id="XD1">
+                            <img src="house2.jpg" alt="">
+                            <span class="close" id="close1">&times;</span>
+                        </div>
+                    
+                        <div id="div2" onclick="showHiddenDiv2()"></div>
+                        <div class="XD" id="XD2">
+                            <img src="house3.jpg" alt="">
+                            <span class="close" id="close2">&times;</span>
+                        </div>
+                        <div id="div2" onclick="showHiddenDiv2()"></div>
+                        <div class="XD" id="XD2">
+                            <img src="house3.jpg" alt="">
+                            <span class="close" id="close2">&times;</span>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        </div>
+
+        <div class="bottom">
+            <button class="btn1">More info</button>
+            <button class="btn2" onclick="openPopup2()">Schedule a Tour</button>
+        </div>
+        
+        
+                
+    <script src="realestate-det.js"></script>
+</body>
+</html>

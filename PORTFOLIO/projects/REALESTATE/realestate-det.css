@@ -1,0 +1,897 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+    text-decoration:none;
+}
+
+.navbar{
+    height:8vh;
+    border-bottom: 1px solid #888;
+    display:flex;
+    gap:70px;
+    align-items:center;
+    position:sticky;
+    top:0;
+    background-color:white;
+}
+
+.navbar a{
+  font-weight:900;
+}
+
+.navbar a{
+  text-decoration:none;
+  color:black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: -20px;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight:900;
+}
+
+.dropdown-button:hover{
+  background-color: #009dc4;
+  border-radius:10px;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover{
+  background-color: #dcdcdc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-bar button {
+  border: 1px solid #009dc4;
+  background-color: #009dc4;
+  border-radius:10px;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-bar button i {
+  color: white;
+  font-size: 18px;
+}
+
+.logo{
+  margin-left:5vw;
+  font-size:20px;
+}
+
+.container{
+    height:190vh;
+    display:flex;
+    flex-direction:column;
+    margin-left:13vw;
+    margin-right:13vw;
+    //background-color:blue;
+}
+
+.photo-container{
+}
+
+.photo{
+    width:990px;
+    height:380px;
+    border-radius: 20px;
+    margin-top:5vh;
+    background-image: url('house2.jpg'); /* ścieżka do obrazka */
+    background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+    background-position: center; /* ustawienie pozycji obrazka */
+    background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+    cursor: pointer;
+}
+
+.house-details {
+  display: flex;
+  gap:50px;
+  align-items: center;
+  padding: 20px;
+  justify-content:space-between;
+}
+
+.detail {
+  //background-color:red;
+  text-align: center;
+}
+
+#detail2{
+  width:250px;
+  height:150px;
+  margin-top:5vh;
+}
+
+.detail h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.detail p {
+  margin: 0;
+  //color: #777;
+}
+
+.detail ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.detail li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.detail li i {
+  margin-right: 5px;
+  color: #888;
+}
+
+.tour-btn-cont{
+    width:310px;
+    height:166px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border: 1px solid #888;
+    border-radius:10px;
+}
+
+.tour-btn-cont button{
+    width:200px;
+    height:45px;
+    border-radius:10px;
+    border:1px solid #009dc4;
+    background-color:#009dc4;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.tour-btn-cont button:hover{
+    border:1px solid #009dc4;
+    background-color:white;
+    color:#009dc4;
+}
+
+.tour-btn-cont p{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.p1{
+    font-weigth:900;
+    font-size:24px;
+}
+
+.p2{
+    font-weight:900;
+    font-size:32px;
+}
+
+.desc{
+    //margin-right:400px;
+    text-align:center;
+}
+
+.info-cont{
+    height:25vh;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+
+.info ul li {
+  display: flex;
+  align-items: center;
+  margin-top:20px;
+}
+
+.info ul li i {
+  margin-right: 10px;
+  color:#888;
+}
+
+.info ul li p {
+  margin: 0;
+  margin-left:10vw;
+}
+
+.text{
+  margin-left:40px;
+  margin-bottom:-20px;
+}
+
+.info-cont-more{
+  display:flex;
+}
+
+#info2{
+  margin-left:100px;
+}
+
+.iconte{
+  height:20px;
+  width:200px;
+}
+
+ .main-div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+        }
+
+        /* Style dla diva overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            overflow:auto;
+        }
+
+        /* Style dla diva pop-up */
+        .popup {
+            background-color: white;
+            height:80vh;
+            width:80vw;
+            overflow:auto;
+        }
+
+        .popup2 {
+            background-color: white;
+            height:560px;
+            width:600px;
+            overflow:auto;
+            border-radius:10px;
+        }
+        .pop2cont{
+          margin-left:20px;
+          margin-right:20px;
+        }
+
+        .pop2cont select{
+          width:100%;
+          height:10vh;
+          border-radius:10px;
+        }
+
+.images-cont{
+  display:flex;
+}
+
+.images-cont div{
+  width:60vh;
+  height:40vh;
+  margin-left:1vw;
+  margin-right:1vw;
+  margin-bottom:1vh;
+  cursor:pointer;
+}
+.popup{
+  display:flex;
+}
+
+.box1{
+  width:100%;
+  height:100vh;
+}
+
+#div1{
+      background-image: url('house2.jpg'); /* ścieżka do obrazka */
+    background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+    background-position: center; /* ustawienie pozycji obrazka */
+    background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#div2{
+      background-image: url('house3.jpg'); /* ścieżka do obrazka */
+    background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+    background-position: center; /* ustawienie pozycji obrazka */
+    background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#div3{
+      background-image: url('house4.jpg'); /* ścieżka do obrazka */
+    background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+    background-position: center; /* ustawienie pozycji obrazka */
+    background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+#div4{
+      background-image: url('house5.jpg'); /* ścieżka do obrazka */
+    background-size: cover; /* skalowanie obrazka, aby wypełnił cały div */
+    background-position: center; /* ustawienie pozycji obrazka */
+    background-repeat: no-repeat; /* wyłączenie powtarzania obrazka */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 9999;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.closepop{
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  border:none;
+}
+
+.XD{
+  width:200px;
+  height:200px;
+  //background-color:black;
+  position:absolute;
+  top:30vh;
+  left:30vw;
+  display:none;
+}
+
+.hide{
+  background-color: rgba(0, 0, 0, 0.5);
+  position:absolute;
+  height:80vh;
+  width:80vw;
+  display:none;
+  
+}
+
+.up{
+  height:10vh;
+}
+
+.upbar{
+  display:flex;
+  position:relative;
+}
+
+.upbar i{
+  position:absolute;
+  right: 0;
+  cursor:pointer;
+  top:15px;
+}
+
+.upbar p{
+  position:absolute;
+  left:0;
+}
+
+#overlayx i{
+  cursor:pointer;
+}
+
+.days{
+  display:flex;
+}
+
+.top{
+  height:10vh;
+  position:relative;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.top p{
+  position:absolute;
+  left:0;
+}
+
+.top i{
+  position:absolute;
+  right:0;
+  top: 15px;
+}
+
+.days div{
+  margin-right:5px;
+  width:130px;
+  height:85px;
+  border-radius:10px;
+  border: 1px solid black;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction:column;
+}
+
+.days div:first-child{
+  margin-left:20px;
+}
+
+.days div p{
+  margin:0px;
+}
+
+.top{
+  display:flex;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: calc(600px*2);
+  transition: transform 0.5s ease;
+  
+}
+
+.slider-item {
+  flex: 0 0 600px;
+  height: 100px;
+}
+
+.slider-item:first-child{
+  margin-left:1.5%;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-prev-btn,
+.slider-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.slider-prev-btn:hover,
+.slider-next-btn:hover {
+  opacity: 1;
+}
+
+.slider-prev-btn {
+  left: 0;
+}
+
+.slider-next-btn {
+  right: 0;
+}
+
+.cards-container{
+  display:flex;
+  //background-color:red;
+  //justify-content:center;
+  //align-items:center;
+}
+
+.house-card{
+  width:130px;
+  height:85px;
+  border-radius:10px;
+  //position:relative;
+  display:flex;
+  cursor:pointer;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction:column;
+  margin-right:10px;
+  border:1px solid #888;
+  transition: border-color 0.3s ease;
+}
+
+.house-card p{
+  margin:0;
+}
+
+
+
+.house-card{
+    overflow:hidden;
+}
+
+.house-card {
+  //width: 200px;
+  //height: 200px;
+  border: 2px solid #888;
+  transition: border-color 0.3s ease;
+}
+
+.house-card.active {
+  border-color: #009dc4;
+}
+
+.house-card:hover{
+  background-color:#EBECF0;
+}
+
+.house-card p:first-child{
+  margin-top: 10px;
+  color:#6d6d6d;
+}
+
+.house-card p:nth-child(2){
+  font-weight:900;
+  font-size:20px;
+}
+
+.house-card p:last-child{
+  margin-bottom: 10px;
+  color:#6d6d6d;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.form input:first-child{
+  margin-top:20px;
+}
+
+.form input{
+  width:99%;
+  height:9vh;
+  border-radius:10px;
+  border:1px solid #888;
+}
+
+.form button{
+  height: 9vh;
+  border-radius:10px;
+  border:1px solid #009dc4;
+  background-color:#009dc4;
+  color:white;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.form button:hover{
+  border:1px solid #009dc4;
+  background-color:white;
+  color:#009dc4;
+}
+
+.psyp{
+  background-color:red;
+}
+
+.mobile-det{
+  display:none;
+}
+
+.det{
+  display:flex;
+}
+.det .p2{
+  margin-left:3vw;
+}
+
+.detail-mob-icon{
+  display:none;
+}
+
+.navmobile{
+  display:none;
+}
+
+.bottom{
+  display:none;
+}
+
+@media (max-width: 767px) {
+  html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+  
+  .navmobile{
+    position:fixed;
+    top:0;
+    z-index:99999;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    background-color:white;
+  }
+
+  .navmobile p{
+    font-size: 24px;
+    margin-left:20px;
+  }
+
+  .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 9999;
+  transition: right 0.3s ease-in-out;
+}
+
+.open-menu-btn {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+  outline: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.open-menu-btn:hover {
+  color: #777;
+}
+
+/* Style the close button */
+.close-menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Show the mobile menu when the open button is clicked */
+.mobile-menu-open .mobile-menu {
+  display: block;
+}
+
+/* Hide the open button when the mobile menu is open */
+.mobile-menu-open .open-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  
+}
+
+.mobile-menu.active {
+  display: block;
+  
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid black
+}
+
+.mobile-menu li:hover {
+  background-color: #ddd;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+  .navbar{
+    display:none;
+  }
+
+  .photo-container{
+    margin-top:6vh;
+  }
+
+  .house-details{
+    
+  }
+
+  .mobile-det{
+    display:block;
+    margin-left:10vw;
+  }
+
+  .det{
+    display:none;
+  }
+
+  .tour-btn-cont{
+    display:none;
+  }
+
+  .info-cont-more{
+    flex-direction:column;
+  }
+
+  #info2{
+    margin-left:0;
+  }
+  .desc{
+    margin-left:7vw;
+    margin-right:7vw;
+  }
+  .info-cont{
+    height:38vh;
+    width:90vw;
+  }
+
+  .iconte{
+    width:150px;
+  }
+
+  .photo{
+    width:100vw;
+    margin:0;
+    border-radius:0;
+    height:30vh;
+  }
+  .container{
+    margin-left:0;
+    margin-right:0;
+    height:180vh;
+  }
+  
+  #detail2{
+    margin-left:10vw;
+  }
+
+  .detail-nomob-icon{
+    display:none;
+  }
+
+  .detail-mob-icon{
+    display:block;
+  }
+
+  .containerinfo{
+    display:flex;
+    justify-content:center;
+  }
+  .bottom{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:8vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    background-color:white;
+  }
+
+  .bottom .btn2{
+    width:150px;
+    height:45px;
+    border-radius:10px;
+    border:1px solid #009dc4;
+    background-color:#009dc4;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+}
+
+
+.bottom .btn1{
+    width:150px;
+    height:45px;
+    border-radius:10px;
+    border:1px solid #009dc4;
+    background-color:white;
+    color:#009dc4;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.popup2{
+  border-radius:0;
+}
+
+.pop2cont select{
+  height: 6vh;
+}
+.pop2cont input{
+  height: 6vh;
+}
+.pop2cont button{
+  height:6vh;
+}
+
+}
